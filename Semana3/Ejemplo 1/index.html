@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificación de Elegibilidad para Votar</title>
+    <!-- Agregar el enlace al CDN de Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2 class="mb-4">Verificación de Elegibilidad para Votar</h2>
+        
+        <form action="verificar_elegibilidad.php" method="post">
+            <div class="form-group">
+                <label for="edad">Ingrese su edad:</label>
+                <input type="number" class="form-control" name="edad" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Verificar Elegibilidad</button>
+        </form>
+    </div>
+
+    <!-- Agregar el script de Bootstrap (jQuery y Popper.js son requeridos) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
