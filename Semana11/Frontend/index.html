@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webservice Client</title>
+    <!-- Agregar Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="mb-4">Webservice Client</h1>
+
+        <!-- Formulario para realizar la solicitud GET -->
+        <h2>Obtener Venta por ID</h2>
+        <form id="getForm" class="mb-4">
+            <div class="form-group">
+                <label for="idVenta">ID de Venta:</label>
+                <input type="text" id="idVenta" name="idVenta" class="form-control" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Obtener Venta</button>
+        </form>
+        <div id="getResults"></div>
+
+        <!-- Formulario para realizar la solicitud POST -->
+        <h2>Registrar Nueva Venta</h2>
+        <form id="postForm" class="mb-4">
+            <div class="form-group">
+                <label for="idUsuario">ID de Usuario:</label>
+                <input type="text" id="idUsuario" name="idUsuario" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="idProducto">ID de Producto:</label>
+                <input type="text" id="idProducto" name="idProducto" class="form-control" required>
+            </div>
+            <button type="submit" class="btn btn-success">Registrar Venta</button>
+        </form>
+
+        <!-- Tabla para mostrar ventas y acciones de editar y eliminar -->
+        <h2>Ventas Registradas</h2>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>ID Venta</th>
+                    <th>ID Usuario</th>
+                    <th>ID Producto</th>
+                    <th>Fecha</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="ventasTable"></tbody>
+        </table>
+    </div>
+
+    <!-- Agregar Bootstrap JS y Script para manejar las solicitudes -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
